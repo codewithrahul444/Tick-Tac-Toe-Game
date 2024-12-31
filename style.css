@@ -1,0 +1,442 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 90vh;
+  background-color: black;
+  color: #fff;
+}
+
+#contener {
+  margin: auto;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+  margin: 50px 0px;
+  padding: 10px 20px;
+  color: #000;
+  border: 5px ridge white;
+  background-color: white;
+  box-shadow: 0px 0px 10px 5px white;
+  transition: all 1s linear;
+  font-size: 4rem;
+}
+
+#turn {
+  color: green;
+  padding: 0px 10px;
+  font-family: Jaro;
+  box-shadow: 0px 0px 10px 5px #27A300;
+  background-color: #27A300;
+  color: #fff;
+  transition: all 0.5s linear;
+}
+
+.game {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 40%;
+}
+
+.box {
+  height: 200px;
+  width: 200px;
+  margin: 30px;
+  border: none;
+  box-shadow: 0px 0px 10px 5px #ECFFEB;
+  background-color: #ECFFEB;
+  font-size: 5rem;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 10rem;
+}
+
+.box:hover {
+  background-color: rgb(64, 0, 255);
+  box-shadow: 0px 0px 10px 5px rgb(64, 0, 255);
+}
+
+.reset {
+  padding: 10px 50px;
+  background-color: red;
+  border-radius: 500px;
+  text-decoration: none;
+  color: #000;
+  transition: all 0.5s linear;
+  box-shadow: 0px 0px 10px 5px red;
+  font-weight: bold;
+  font-size: 2.4rem;
+}
+
+.reset:hover,
+.reset:active {
+  color: #000;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 5px #fff;
+}
+
+.reset-center {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  align-items: center;
+}
+
+.win-msg-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+#win-msg {
+  text-align: center;
+  margin: 0rem 5rem;
+  width: 90%;
+  color: #000;
+  border: 1rem ridge white;
+  background-color: white;
+  box-shadow: 0px 0px 10px 5px white;
+  font-weight: bold;
+  font-size: 3rem;
+  padding: 1.5rem;
+}
+
+.hide {
+  display: none;
+}
+
+footer {
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  bottom: 0;
+}
+
+.mylogo {
+  margin-left: 20px;
+  height: 90px;
+}
+
+#madeby {
+  font-size: 3rem;
+}
+
+@media (max-width: 2000px) {
+  .game {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 20%;
+  }
+
+  .box {
+    height: 90px;
+    width: 90px;
+    margin: 10px;
+    font-size: 5rem;
+  }
+
+  .reset {
+    font-size: 2rem;
+    padding: 10px 30px;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+}
+
+@media (max-width: 1750px) {
+  .game {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 25%;
+  }
+
+  .box {
+    height: 90px;
+    width: 90px;
+    margin: 10px;
+    font-size: 5rem;
+  }
+
+  .reset {
+    font-size: 2rem;
+    padding: 10px 30px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+}
+
+@media (max-width: 1400px) {
+  .game {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 30%;
+  }
+
+  .box {
+    height: 90px;
+    width: 90px;
+    margin: 10px;
+    font-size: 5rem;
+  }
+
+  .reset {
+    font-size: 2rem;
+    padding: 10px 30px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+}
+
+@media (max-width: 1173px) {
+  .game {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 35%;
+  }
+
+  .box {
+    height: 90px;
+    width: 90px;
+    margin: 10px;
+    font-size: 5rem;
+  }
+
+  .reset {
+    font-size: 2.1rem;
+    padding: 10px 30px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+}
+
+@media (max-width: 1000px) {
+  .game {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 40%;
+  }
+
+  .box {
+    height: 90px;
+    width: 90px;
+    margin: 10px;
+    font-size: 5rem;
+  }
+
+  .reset {
+    font-size: 2.1rem;
+    padding: 10px 30px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+}
+
+@media (max-width: 870px) {
+  .game {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 45%;
+  }
+
+  .box {
+    height: 90px;
+    width: 90px;
+    margin: 10px;
+    font-size: 5rem;
+  }
+
+  .reset {
+    font-size: 2rem;
+    padding: 10px 30px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+}
+
+@media (max-width: 773px) {
+  .game {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 55%;
+  }
+
+  .box {
+    height: 90px;
+    width: 90px;
+    margin: 10px;
+    font-size: 5rem;
+  }
+
+  .reset {
+    font-size: 1.9rem;
+    padding: 10px 30px;
+  }
+
+  h1 {
+    font-size: 2.9rem;
+  }
+
+}
+
+@media (max-width: 635px) {
+  .game {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 65%;
+  }
+
+  .box {
+    height: 90px;
+    width: 90px;
+    margin: 10px;
+    font-size: 5rem;
+  }
+
+  .reset {
+    font-size: 1.7rem;
+    padding: 10px 30px;
+  }
+
+  h1 {
+    font-size: 2.7rem;
+  }
+
+  #madeby {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 536px) {
+  .game {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 75%;
+  }
+
+  .box {
+    height: 90px;
+    width: 90px;
+    margin: 10px;
+    font-size: 4.5rem;
+  }
+
+  .reset {
+    font-size: 1.5rem;
+    padding: 10px 30px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+}
+
+@media (max-width: 465px) {
+  .game {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+  }
+
+  .box {
+    height: 90px;
+    width: 90px;
+    margin: 10px;
+    font-size: 4.5rem;
+  }
+
+  .reset {
+    font-size: 1.2rem;
+    padding: 10px 30px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .game {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .box {
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+    font-size: 4rem;
+  }
+
+  .reset {
+    font-size: 1rem;
+    padding: 10px 30px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  #win-msg {
+    font-size: 1rem;
+  }
+
+}

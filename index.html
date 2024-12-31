@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>0 X Game</title>
+  <link rel="stylesheet" href="style.css"> <!-- This Is Main Stylesheet -->
+
+  <!-- For Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Jaro:opsz@6..72&family=Orbitron:wght@400..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="win-msg-container hide">
+    <p id="win-msg">Winner</p>
+    <a href="index.html" class="reset">New Game</a>
+    <a href="#contener" class="reset">Game Preview</a>
+  </div>
+  <div id="contener">
+    <h1>
+      Turn Is <span id="turn">0</span>
+    </h1>
+    <div class="game">
+      <button class="box"></button>
+      <button class="box"></button>
+      <button class="box"></button>
+      <button class="box"></button>
+      <button class="box"></button>
+      <button class="box"></button>
+      <button class="box"></button>
+      <button class="box"></button>
+      <button class="box"></button>
+    </div>
+  </div>
+  <div class="reset-center">
+    <a href="index.html" class="reset reset-color">Reset Game</a>
+  </div>
+  <footer>
+    <div id="madeby">Made & Designed By</div>
+    <img src="MyLogo.png" alt="MyLogo" class="mylogo">
+  </footer>
+  <script src="main.js"></script>
+</body>
+
+</html>
